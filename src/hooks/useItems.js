@@ -5,6 +5,7 @@ function useItems() {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
 
+    // Hämtar alla items från CatalogService API
     useEffect(() => {
         fetch('https://library-catalog-service.azurewebsites.net/api/Items')
             .then(res => res.json())

@@ -9,6 +9,7 @@ function App() {
     const [filter, setFilter] = useState('Alla')
     const [search, setSearch] = useState('')
 
+    // Filtrerar items baserat på vald kategori och sökterm.
     const filteredItems = items
         .filter(item => filter === 'Alla' || item.itemType === filter)
         .filter(item => item.title.toLowerCase().includes(search.toLowerCase()))

@@ -1,4 +1,5 @@
-﻿function FilterButtons({ filter, onFilterChange }) {
+﻿// Renderar filterknappar för objekttyper
+function FilterButtons({ filter, onFilterChange }) {
     const types = ['Alla', 'Bok', 'Utrustning']
 
     return (

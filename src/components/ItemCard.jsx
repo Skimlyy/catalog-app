@@ -1,4 +1,5 @@
-﻿function ItemCard({ item }) {
+﻿// Visar ett biblioteksobjekt som ett kort
+function ItemCard({ item }) {
     return (
         <div className="card">
             <h2>{item.title}</h2>
