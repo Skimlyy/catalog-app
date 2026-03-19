@@ -114,3 +114,27 @@ h1 {
   background: #4a1a1a;
   color: #f44336;
 }
+.search {
+  display: block;
+  margin: 0 auto 1.5rem;
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid #0f3460;
+  border-radius: 25px;
+  background: #16213e;
+  color: #eee;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search:focus {
+  border-color: #e2b96f;
+}
+
+.no-results {
+  text-align: center;
+  color: #aaa;
+  margin-top: 2rem;
+}
