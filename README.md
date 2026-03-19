@@ -1,16 +1,29 @@
-# React + Vite
+Bibliotekskatalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Detta är en React SPA (Single Page Application) som visar bibliotekskatalogen från det interna bibliotekssystemet.
 
-Currently, two official plugins are available:
+Vad gör applikationen?
+Applikationen hämtar och visar objekt från CatalogService API. Användaren kan:
+* Se alla tillgängliga objekt i biblioteket.
+* Filtrera objekt efter typ (Bok eller Utrustning)
+* Söka efter objekt via titel
+* Se tillgänglighetsstatus för varje objekt
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Hur körs applikationen?
+Applikationen kräver att Node.js är installerat
 
-## React Compiler
+och man startar den via terminalen med 
+npm install
+npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Applikationen körs via localhost och anropar CatalogService API från:
+https://library-catalog-service.azurewebsites.net/api/Items
 
-## Expanding the ESLint configuration
+AI-användning
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+AI har använts som stöd under utvecklingen för att få förslag på komponentstruktur, CSS-styling och logik för filtrering och sökning.
+All kod har granskats, anpassats och förståtts innan den inkluderats i projektet.
+
+Verktyg utöver kursmaterial
+Vite används som byggverktyg för att sätta upp React-projektet. Vite valdes eftersom det är det moderna standardsättet att skapa React-projekt och ersätter det äldre create-react-app.
+Detta ger snabbare utvecklingsserver och enklare konfiguration.
